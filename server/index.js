@@ -2,6 +2,8 @@ const express = require('express')
 const mongoose = require('mongoose');
 const Product = require('./models/product.model.js')
 const productRoute = require('./routes/product.route.js')
+const authRoute = require('./routes/auth.route.js')
+const userRoute = require('./routes/user.route.js')
 require('dotenv').config()
 
 const app = express()
@@ -15,6 +17,8 @@ app.use(express.urlencoded({extended: true}))
 
 // Routes
 app.use('/api/products', productRoute)
+app.use('/api/auth', authRoute)
+app.use('/api/users', userRoute)
 
 
 

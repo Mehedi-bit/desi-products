@@ -22,7 +22,8 @@ const userSchema = new mongoose.Schema({
     
         avatar: {
             type: String,
-            default: 'https://img.freepik.com/free-vector/hand-drawn-one-line-art-illustration_23-2149286202.jpg?t=st=1712740572~exp=1712744172~hmac=024622624a0d756f4cda5a1de0241120ba667646722baa735fc74609dced9314&w=740'
+            default: 'https://img.freepik.com/free-vector/hand-drawn-one-line-art-illustration_23-2149286202.jpg?t=st=1712740572~exp=1712744172~hmac=024622624a0d756f4cda5a1de0241120ba667646722baa735fc74609dced9314&w=740',
+            required: false
         },
 
 
